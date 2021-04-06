@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import firebase from "firebase/app";
-import firebaseConfig from '../../firebase.config';
+import firebaseConfig from './firebase.config';
 import "firebase/auth";
 import { Button } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
