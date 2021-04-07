@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import './Products.css';
 
 const Products = ({ product }) => {
     console.log(product);
@@ -17,7 +16,7 @@ const Products = ({ product }) => {
 
     return (
         <div style={{ float: 'left', className: 'row' }}>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem', margin: '30px 40px' }}>
                 <Card.Img variant="top" src={picture} style={{ height: '200px', border: 0 }} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
