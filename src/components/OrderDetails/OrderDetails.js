@@ -9,9 +9,9 @@ const OrderDetails = ({ bundle }) => {
         alert("PARCEL is Going");
     }
     return (
-        <div style={{ float: 'left' }} className="row">
-            <Card style={{ width: '20rem' }}>
-                <Card.Img variant="top" src={picture} style={{ height: '200px' }} />
+        <div style={{ float: 'left', marginLeft: '40px' }} className="row">
+            <Card style={{ width: '15rem' }}>
+                <Card.Img variant="top" src={picture} style={{ height: '200px', width: '200px' }} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>{color}</Card.Text>

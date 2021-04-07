@@ -17,7 +17,7 @@ const AddProducts = () => {
             picture: pictureURL
         }
         console.log(itemData);
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://sleepy-forest-37930.herokuapp.com/addProduct`;
         fetch(url, {
             method: 'POST',
             headers: {
