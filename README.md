@@ -3,9 +3,10 @@
 Live Site Link :- https://smart-cellular.web.app/
 
 Key Features : 
-- Built different dashboard for Admin & User.
-- Implemented Google Authentication System. 
-- Launched Payment system with Stripe.
+- Organized an Website with user & admin panel.
+- Built the system of Customizing services by admin.
+- Designed a friendly interface for user.
+
 
 Technologies Used In :
 ```
