@@ -1,14 +1,14 @@
 import React from 'react';
-import { Button, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <div style={{ margin: '20px' }}>
-            <header className="float-left" style={{ fontSize: '25px', marginLeft: '100px' }}>Smart Cellular</header>
+        <Container>
             <Navbar collapseOnSelect expand="lg">
+                <Navbar.Brand href="/">Smart Cellular</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="justify-content-end" style={{ marginRight: '100px' }}>
+                    <Nav className="ml-auto">
                         <Nav.Item>
                             <Nav.Link href="/home">Home</Nav.Link>
                         </Nav.Item>
@@ -25,7 +25,7 @@ const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </div>
+        </Container>
     );
 };
 
