@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from '../Products/Products';
 import { CircularProgress } from '@material-ui/core';
+import { Container } from 'react-bootstrap';
 
 
 const Home = () => {
@@ -13,14 +14,18 @@ const Home = () => {
     }, [])
 
     return (
-        <div>
-            {
-                products.length === 0 && <CircularProgress style={{ marginLeft: '750px' }} />
-            }
-            {
-                products.map(product => <Products product={product}></Products>)
-            }
-        </div>
+        <Container>
+            <div className="d-flex justify-content-center">
+                {
+                    products.length === 0 && <CircularProgress />
+                }
+            </div>
+            <div className="d-flex justify-content-center row p-3">
+                {
+                    products.map(product => <Products product={product}></Products>)
+                }
+            </div>
+        </Container>
     );
 };
 
