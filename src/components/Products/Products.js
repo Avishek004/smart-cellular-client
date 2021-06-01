@@ -15,7 +15,7 @@ const Products = ({ product }) => {
     const { name, color, price, picture, _id } = product;
 
     return (
-        <div className="col-md-4 col-sm-6 col-12 p-3">
+        <div className="col-md-3 col-sm-6 col-12 p-3">
             <Card>
                 <Card.Img variant="top" src={picture} style={{ height: '200px', border: 0 }} />
                 <Card.Body>

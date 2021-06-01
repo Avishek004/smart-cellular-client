@@ -14,13 +14,13 @@ const Home = () => {
     }, [])
 
     return (
-        <Container>
+        <Container Fluid>
             <div className="d-flex justify-content-center">
                 {
                     products.length === 0 && <CircularProgress />
                 }
             </div>
-            <div className="d-flex justify-content-center row p-3">
+            <div className="row p-3">
                 {
                     products.map(product => <Products product={product}></Products>)
                 }
